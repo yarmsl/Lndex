@@ -1,0 +1,147 @@
+.header {
+    width: 100%;
+    height: 100vh;
+    // min-height: $minH;
+    // max-height: $maxH;
+    font-family: $ff1;
+    background-color: $prime;
+    overflow: hidden;
+}
+
+.navbar {
+    top: 0;
+    max-width: 1184px;
+    height: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed !important;
+    padding: 0 5%;
+    &_wrapper {
+        transition: all 450ms ease-in-out;
+        z-index: 20;
+        width: 100%;
+        height: 50px;
+        position: fixed !important;
+    }
+    &__logo {
+        transition: all 450ms ease-in-out;
+        flex-grow: 0;
+        transform: scale(0);
+        opacity: 0;
+        display: none;
+    }
+    &__button {
+        transition: all 250ms ease;
+        margin-left: 32px;
+        
+    }
+}
+
+.logo {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    width: 550px;
+    position: relative;
+    transition: all 100ms;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 1;
+    &__title {
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        font-weight: bold;
+        font-size: 110px;
+        line-height: 134px;
+        color: $tp;
+        text-shadow: $shadow1;
+        & span {
+            backface-visibility: hidden;
+            transform: translateZ(0);
+            color: $light;
+        }
+    }
+    &__subtitle {
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 28px;
+        color: $tp;
+    }
+}
+.header__title {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    margin-top: 220px;
+    color: $light;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    text-shadow: 0px 0px 20px #c1c8ff80;
+    white-space: nowrap;
+}
+
+
+
+
+  .hideNav {
+      top: -42px;
+  }
+
+  .scaleLogo {
+    transition: all 2s ease;
+
+    position: fixed;
+    transform: scale(0);
+    top: 15px;
+  }
+
+.showLogo {
+    transition: all 450ms ease-in-out;
+    transform: scale(1);
+    opacity: 1;
+    flex-grow: 1;
+}
+.replaceLogo {
+    transition: all 1s ease;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transform: scale(0);
+  }
+.hideTitle {
+    transition: all 1s ease;
+    font-size: 0;
+}
+.hideShapes {
+    transition: all 450ms ease;
+    width:0;
+    top:0;
+    left:50px;
+
+}
+.logoReplace {
+    transition: all 450ms ease;
+    transform: scale(1);
+    left: 0;
+    top: 7px;
+}
+
+.hideTitles {
+    transition: all 450ms ease;
+    transform: scale(0);
+}
+
+.hide {
+    display:none;
+}
+
+.show {
+    display: flex;
+}

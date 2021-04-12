@@ -1,0 +1,22 @@
+@import "nullstyle";
+@import "mixins";
+@import "UI-Kit";
+@import "shapes";
+
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+@import "header";
+@import "main";
+@import "about";
+@import "portfolio";
+@import "services";
+@import "contacts";
+@import "footer";
+@import "carousel";
+@import "media";

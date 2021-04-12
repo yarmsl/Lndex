@@ -1,0 +1,58 @@
+.shape_1 {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+    width: 550px;
+    height: auto;
+    position: absolute;
+    top: -185px;
+    right: 0;
+    left: 0;
+    margin: 0;
+}
+
+.shape_2 {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+    width: 550px;
+    height: auto;
+    position: absolute;
+    top: -200px;
+    right: 0;
+    left: 0;
+    margin: 0;
+
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .shape_1 {
+      animation: logo-shape_1-spin infinite 50s linear;
+    }
+    .shape_2 {
+      animation: logo-shape_2-spin infinite 50s linear;
+    }
+}
+
+@keyframes logo-shape_1-spin {
+    from {
+    transform: rotate(0deg);
+    }
+    50% {
+    transform: rotate(180deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes logo-shape_2-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-180deg);
+        }
+    to {
+      transform: rotate(-360deg);
+    }
+  }

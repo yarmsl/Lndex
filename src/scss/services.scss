@@ -1,0 +1,95 @@
+.services {
+    padding-top: $padVert;
+    padding-right: $padHor;
+    padding-bottom: $padVert;
+    padding-left: $padHor;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    min-height: $minH;
+    max-height: $maxH;
+    background-color: $tp;
+
+    &__container {
+        max-width: 1248px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    &__title {
+        padding: 0 0 34px 34px;
+        height: 10%;
+    }
+}
+
+
+.card_03 {
+    position: relative;
+    top: 30px;
+    opacity: 0;
+    margin-bottom: 48px;
+    width: 100%;
+    height: 45%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    background: right no-repeat url(../img/card03_bg.svg), $tp;
+    background-size: cover;
+    &__wrapper {
+        background: linear-gradient(90deg, #C1C8FF 20.84%, rgba(193, 200, 255, 0) 100%);
+        width: 100%;
+        height: 100%;
+        padding: 32px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 8px;
+    }
+    &__description {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    &__title {
+        margin-bottom: 56px;
+    }
+}
+
+.card_04 {
+    position: relative;
+    top: 30px;
+    opacity: 0;
+    width: 100%;
+    height: 45%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    background: right no-repeat url(../img/card04_bg.svg),  $secondary;
+    background-size: cover;
+    &__wrapper {
+        background: linear-gradient(96.43deg, rgba(79, 92, 201, 0) 0%, #000851 131.62%);
+        border-radius: 8px;
+        width: 100%;
+        height: 100%;
+        padding: 32px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 8px;
+    }
+    &__description {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    &__title {
+        margin-bottom: 56px;
+    }
+ 
+}
