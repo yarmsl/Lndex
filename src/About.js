@@ -2,7 +2,7 @@ import React from 'react';
 import { CarouselAbout } from './CarouselAbout';
 
 
-export const About = () => {
+function About() {
     return (
         <section className="about" id="about">
             <div className="about__wrapper">
@@ -57,3 +57,4 @@ export const About = () => {
 
     )
 }
+export default About

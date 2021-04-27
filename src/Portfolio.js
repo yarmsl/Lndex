@@ -3,10 +3,7 @@ import display from './img/display.png';
 import phones from './img/phones.png';
 
 
-
-
-export const Portfolio = () => {
-
+function Portfolio() {
     return (
         <section className="portfolio" id="portfolio">
             <div className="portfolio__container">
@@ -48,3 +45,4 @@ export const Portfolio = () => {
         </section>
     )
 }
+export default Portfolio;

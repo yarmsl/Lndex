@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 
 
-export const Contacts = () => {
+function Contacts() {
 
     const [name, setName] = useState('');
     const [number, setNumber] = useState('');
@@ -36,21 +36,21 @@ export const Contacts = () => {
 
     useEffect(() => {
         if (nameError || numberError || messageError) {
-            setFormValid(false)
+            setFormValid(false);
         } else {
-            setFormValid(true)
+            setFormValid(true);
         }
     }, [nameError, numberError, messageError]);
 
 
 
     const nameHandler = (e) => {
-        setName(e.target.value)
+        setName(e.target.value);
 
         if (!e.target.value.trim()) {
-            setNameError('Введите имя')
+            setNameError('Введите имя');
         } else {
-            setNameError('')
+            setNameError('');
         }
     }
 
@@ -74,31 +74,31 @@ export const Contacts = () => {
         }
         setNumber(output)
         if (output.length < 19) {
-            setNumberError('Введите номер')
+            setNumberError('Введите номер');
         } else {
-            setNumberError('')
+            setNumberError('');
         }
     }
 
     const messageHandler = (e) => {
-        setMessage(e.target.value)
+        setMessage(e.target.value);
         if (e.target.value.length < 10) {
             setMessageError('Сообщение должно быть не короче 10 символов')
         } else {
-            setMessageError('')
+            setMessageError('');
         }
     }
 
     const blurHandler = (e) => {
         switch (e.target.name) {
             case 'name':
-                setNameDirty(true)
+                setNameDirty(true);
                 break
             case 'phonenumber':
-                setNumberDirty(true)
+                setNumberDirty(true);
                 break
             case 'message':
-                setMessageDirty(true)
+                setMessageDirty(true);
                 break
         }
     }
@@ -189,8 +189,8 @@ export const Contacts = () => {
                     Челябинск, Россия, 454021
                     </a>
                 </div>
-
             </div>
         </section>
     )
 }
+export default Contacts;

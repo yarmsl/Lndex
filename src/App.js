@@ -1,13 +1,13 @@
 
-import React from 'react'
+import React, {Suspense} from 'react';
 import './scss/styles.scss';
 import { Header } from './Header';
 import { Footer } from './Footer';
-import { About } from './About';
-import { Portfolio } from './Portfolio'
-import { Services } from './Services';
-import { Contacts } from './Contacts';
 
+const About = React.lazy(() => import('./About'));
+const Portfolio = React.lazy(() => import('./Portfolio'));
+const Services = React.lazy(() => import('./Services'));
+const Contacts = React.lazy(() => import('./Contacts'));
 
 
 
@@ -16,10 +16,18 @@ function App() {
     <>
       <Header />
       <main className="main">
+      <Suspense fallback={<div>Загрузка о нас...</div>}>
         <About />
-        <Portfolio />
+      </Suspense>
+      <Suspense fallback={<div>Загрузка портфолио...</div>}>
+       <Portfolio />
+      </Suspense>
+      <Suspense fallback={<div>Загрузка услуг...</div>}>
         <Services />
+      </Suspense>
+      <Suspense fallback={<div>Загрузка формы...</div>}>
         <Contacts />
+      </Suspense>
       </main>
       <Footer />
     </>

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 
-export const Services = () => {
+function Services() {
 
     return (
         <section className="services" id="services">
@@ -42,3 +42,4 @@ export const Services = () => {
         </section>
     )
 }
+export default Services;

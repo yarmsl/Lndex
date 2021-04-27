@@ -21,42 +21,7 @@ export const CarouselAbout = () => {
         slidesToScroll: 2,
         // autoplay: true,
         // centerMode: true,
-        // autoplaySpeed: 100,
-        // responsive: [
-        //     {
-        //         breakpoint: 9999,
-        //         settings: {
-        //             slidesToShow: 5,
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 1640,
-        //         settings: {
-        //             slidesToShow: 4,
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 1280,
-        //         settings: {
-        //             slidesToShow: 3,
-        //             slidesToScroll: 1
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 856,
-        //         settings: {
-        //             slidesToShow: 2,
-        //             slidesToScroll: 1
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 600,
-        //         settings: {
-        //             slidesToShow: 1,
-        //             slidesToScroll: 1
-        //         }
-        //     }
-        // ]
+        // autoplaySpeed: 100
     };
 
     return (
