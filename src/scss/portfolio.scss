@@ -9,7 +9,7 @@
     min-height: $minH;
     max-height: $maxH;
     background-color: $prime;
-    
+
     &__container {
         max-width: 1248px;
         height: 100%;
@@ -18,6 +18,7 @@
         flex-direction: column;
         justify-content: space-around;
     }
+
     &__title {
         padding: 0 0 34px 34px;
         height: 10%;
@@ -27,14 +28,12 @@
 
 .card_01 {
     position: relative;
-    top: 30px;
-    opacity: 0;
-    transition: all 350ms ease-in-out;
     margin-bottom: 48px;
     width: 100%;
     height: 45%;
     border-radius: 8px;
     background: $tp;
+
     &__wrapper {
         background: right no-repeat url(../img/card01_bg.png), linear-gradient(89.42deg, #FFFFFF 33.23%, rgba(255, 255, 255, 0) 46.49%);
         background-size: cover;
@@ -47,6 +46,7 @@
         justify-content: space-between;
         border-radius: 8px;
     }
+
     &__description {
         width: 50%;
         height: 100%;
@@ -55,29 +55,29 @@
         align-items: flex-start;
         justify-content: flex-start;
     }
+
     &__title {
         margin-bottom: 56px;
     }
+
     &__image {
-        width:50%;
+        width: 50%;
         padding: 32px 100px;
-        
+
         img {
             width: 100%;
-            
+
         }
-    }  
+    }
 }
 
 .card_02 {
     position: relative;
-    top: 30px;
-    opacity: 0;
-    transition: all 350ms ease-in-out;
     width: 100%;
     height: 45%;
     border-radius: 8px;
     background: $tp;
+
     &__wrapper {
         background: linear-gradient(270deg, #009FAB -18.91%, #FFFFFF 95.35%);
         width: 100%;
@@ -89,6 +89,7 @@
         justify-content: space-between;
         border-radius: 8px;
     }
+
     &__description {
         width: 50%;
         height: 100%;
@@ -98,17 +99,19 @@
         justify-content: flex-start;
         text-align: right;
     }
+
     &__title {
         margin-bottom: 56px;
     }
+
     &__image {
         width: 50%;
         padding: 32px 100px;
-        & img {
-       
-           width: 100%;
-           
-        }
-    }  
-}
 
+        & img {
+
+            width: 100%;
+
+        }
+    }
+}

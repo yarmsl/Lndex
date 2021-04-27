@@ -16,12 +16,12 @@ export const CarouselAbout = () => {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 750,
+        speed: 350,
         slidesToShow: 5,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
         // autoplay: true,
         // centerMode: true,
-        // autoplaySpeed: 10000,
+        // autoplaySpeed: 100,
         // responsive: [
         //     {
         //         breakpoint: 9999,
