@@ -9,6 +9,8 @@
     padding-right: $padHor;
     padding-bottom: $padVert;
     padding-left: $padHor;
+
+
     &__container {
         max-width: 1248px;
         height: 100%;
@@ -19,14 +21,16 @@
         justify-content: space-between;
     }
 }
+
 .form {
     &__container {
-    width: 50%;
-    padding: 34px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        width: 50%;
+        padding: 34px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
     &__hide {
         transition: all 1s ease-in-out;
         display: flex;
@@ -35,24 +39,30 @@
         visibility: visible;
         opacity: 1;
     }
+
     &__title {
         margin: 16px;
     }
+
     &__description {
         margin: 8px;
     }
+
     &__input {
         width: 100%;
     }
+
     &__button {
         width: 275px;
         height: 50px;
         margin: 32px;
     }
+
     &__info {
         height: 26px;
         padding: 7px 0;
     }
+
     &__policy {
         margin-top: 7px;
     }
@@ -72,6 +82,7 @@
     &__title {
         margin: 17px;
     }
+
     &__contact {
         margin: 17px;
     }
@@ -83,11 +94,13 @@
     border-bottom: 4px solid $tp;
     margin: 12px 0;
 }
+
 .contact {
     &_phone {
         width: 285px;
         background: left center no-repeat url(../icons/phone.svg);
     }
+
     &_mail {
         background: left center no-repeat url(../icons/mail.svg);
         width: 285px;

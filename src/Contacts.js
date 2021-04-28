@@ -64,7 +64,7 @@ function Contacts() {
             tel = phoneNumber.substr(7, 4);
 
         if (area.length === 0) {
-            output = code
+            output = code;
         } else if ((area.length < 3) || pre.length === 0) {
             output = code + " (" + area;
         } else if ((area.length === 3 && pre.length < 3) || tel.length === 0) {
@@ -101,7 +101,7 @@ function Contacts() {
                 setMessageDirty(true);
                 break
         }
-    }
+    };
 
 
     return (

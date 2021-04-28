@@ -1,15 +1,50 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import display from './img/display.png';
 import phones from './img/phones.png';
 
-
 function Portfolio() {
+const card1 = useRef();
+const card2 = useRef();
+
+    function isFullVis(el) {
+        let elBound = el.current.getBoundingClientRect(),
+            top = elBound.top,
+            bottom = elBound.bottom;
+        return ((top >= 0) && (bottom <= window.innerHeight));
+      }
+
+    useEffect(() => {
+        window.addEventListener('scroll', listenScroll);
+        function isPartVis(el) {
+            let elBound = el.current.getBoundingClientRect(),
+                top = elBound.top,
+                bottom = elBound.bottom,
+                height = elBound.height;
+            return ((top + height >= 0) && (height + window.innerHeight >= bottom));
+        }
+        function listenScroll() {
+            if (isPartVis(card1)) {
+                card1.current.classList.add('activeVis');
+            } else {
+                card1.current.classList.remove('activeVis');
+            }
+            if (isPartVis(card2)) {
+                card2.current.classList.add('activeVis');
+            } else {
+                card2.current.classList.remove('activeVis');
+            }}
+        return () =>
+            window.removeEventListener('scroll', listenScroll);
+    }, []);
+
     return (
+        
         <section className="portfolio" id="portfolio">
+            {}
             <div className="portfolio__container">
             <div className="portfolio__title title title_dark">Наши работы</div>
             
-            <div className='card_01'>
+            <div className='card_01' ref={card1}>
                 <div className="card_01__wrapper">
                     <div className="card_01__description">
                         <div className="card_01__title title title_card_01">
@@ -25,7 +60,7 @@ function Portfolio() {
 
                 </div>
             </div>
-            <div className='card_02'>
+            <div className='card_02' ref={card2}>
                 <div className="card_02__wrapper">
                     <div className="card_02__image">
                         <img src={phones} alt="KVIK" />
