@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "./static/css/main.786fc084.chunk.css",
-    "main.js": "./static/js/main.81a0b98b.chunk.js",
-    "main.js.map": "./static/js/main.81a0b98b.chunk.js.map",
+    "main.css": "./static/css/main.39debbde.chunk.css",
+    "main.js": "./static/js/main.efb879c4.chunk.js",
+    "main.js.map": "./static/js/main.efb879c4.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.763abd9e.js",
     "runtime-main.js.map": "./static/js/runtime-main.763abd9e.js.map",
     "static/css/2.a1be631c.chunk.css": "./static/css/2.a1be631c.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.dc3920b2.chunk.js.map": "./static/js/3.dc3920b2.chunk.js.map",
     "index.html": "./index.html",
     "static/css/2.a1be631c.chunk.css.map": "./static/css/2.a1be631c.chunk.css.map",
-    "static/css/main.786fc084.chunk.css.map": "./static/css/main.786fc084.chunk.css.map",
+    "static/css/main.39debbde.chunk.css.map": "./static/css/main.39debbde.chunk.css.map",
     "static/js/2.be6400bf.chunk.js.LICENSE.txt": "./static/js/2.be6400bf.chunk.js.LICENSE.txt",
     "static/media/styles.scss": "./static/media/phones.112a954d.png",
     "static/media/facebook.aa5a1080.svg": "./static/media/facebook.aa5a1080.svg",
@@ -33,7 +33,7 @@
     "static/js/runtime-main.763abd9e.js",
     "static/css/2.a1be631c.chunk.css",
     "static/js/2.be6400bf.chunk.js",
-    "static/css/main.786fc084.chunk.css",
-    "static/js/main.81a0b98b.chunk.js"
+    "static/css/main.39debbde.chunk.css",
+    "static/js/main.efb879c4.chunk.js"
   ]
 }
