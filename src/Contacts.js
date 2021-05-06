@@ -24,10 +24,10 @@ function Contacts() {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        emailjs.sendForm('gmail', 'template_2o1lunz', e.target, 'user_gA4mJT01dIZlfSXzraUHT')
+        emailjs.sendForm('gmail', 'template_5ty923c', e.target, 'user_g2CHzMwo6BvUnkMn2syIK')
             .then((result) => {
                 setSendResult(result.text);
-                setHideForm('form__hide hide_form')
+                setHideForm('form__hide hide_form');
             }, (error) => {
                 setSendError(error.text);
             });
@@ -174,19 +174,19 @@ function Contacts() {
                         Студия цифрового опыта INDEX
                     </div>
 
-                    <a href="tel:89191232395" className="field__contact text text_contact contact_phone">
-                        8 (919) 123 - 23 - 95
+                    <a href="tel:89999999999" className="field__contact text text_contact contact_phone">
+                        8 (999) 999 - 999 - 99
                     </a>
-                    <a href="tel:83512232395" className="field__contact text text_contact contact_phone">
-                        8 (351) 223 - 23 - 95
+                    <a href="tel:80000000000" className="field__contact text text_contact contact_phone">
+                        8 (000) 000 - 00 - 00
                     </a>
 
-                    <a href="mailto:guru-grupp@mail.ru" className="field__contact text text_contact contact_mail">
-                        guru-grupp@mail.ru
+                    <a href="mailto:mail@mail.ru" className="field__contact text text_contact contact_mail">
+                        mail@mail.ru
                     </a>
                     <a href="#" className="field__contact text text_contact">
-                        Молодогвардейцев 60в, офис 505<br />
-                    Челябинск, Россия, 454021
+                        Адрес<br />
+                    Челябинск, Россия, 454100
                     </a>
                 </div>
             </div>

@@ -11,24 +11,24 @@ export const Footer = () => {
             <div className="footer__container">
                 <div className="footer__info">
                     <p>Студия цифрового опыта INDEX</p>
-                    <a href="tel:89191232395">8(919)-123-23-95</a>
-                    <a href="mailto:guru-grupp@mail.ru">guru-grupp@mail.ru</a>
+                    <a href="tel:8000000000">8(000)-000-00-00</a>
+                    <a href="mailto:mail@mail.ru">mail@mail.ru</a>
                 </div>
                 <div className="footer__adress">
-                    <p>Молодогвардейцев 60в, офис 505</p>
-                    <p>Челябинск, Россия, 454021</p>
+                    <p>Адрес</p>
+                    <p>Челябинск, Россия, 454100</p>
                 </div>
                 <div className="footer__social">
-                    <a href="https://www.instagram.com/index.ds/">
+                    <a href="">
                         <ReactSVG src={instagram} />
                     </a>
-                    <a href="https://www.facebook.com/INDEX-103634548475412/?refid=52&__tn__=C-R">
+                    <a href="">
                         <ReactSVG src={facebook} />
                     </a>
-                    <a href="https://vk.com/index_ds">
+                    <a href="">
                         <ReactSVG src={vk} />
                     </a>
-                    <a href="https://www.linkedin.com/company/index-digital-studio">
+                    <a href="">
                         <ReactSVG src={linkedin} />
                     </a>
                 </div>
