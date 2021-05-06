@@ -81,10 +81,10 @@ export const Header = () => {
 
         }
         else if (scroll > ((realHeight + viewHeight) - 50) && scroll < ((realHeight + (2 * viewHeight)) - 50)) {
-            setNbTheme(dark);
+            setNbTheme(light);
         }
         else if (scroll > ((realHeight + (2 * viewHeight)) - 50) && scroll < ((realHeight + (3 * viewHeight)) - 50)) {
-            setNbTheme(light);
+            setNbTheme(dark);
         }
         else {
             setNbTheme(dark);
@@ -113,7 +113,7 @@ export const Header = () => {
                 <nav className="navbar">
                     <a className={showLogo} style={nbTheme.nbLogo} href="#">IND<span>E</span>X</a>
                     <a href="#about" className="navbar__button button_navbar" style={nbTheme.nbButton} >О компании</a>
-                    <a href="#portfolio" className="navbar__button button_navbar" style={nbTheme.nbButton} >Портфолио</a>
+                    {/* <a href="#portfolio" className="navbar__button button_navbar" style={nbTheme.nbButton} >Портфолио</a> */}
                     <a href="#services" className="navbar__button button_navbar" style={nbTheme.nbButton} >Услуги</a>
                     <a href="#contacts" className="navbar__button button_navbar" style={nbTheme.nbButton} >Контакты</a>
                 </nav>
