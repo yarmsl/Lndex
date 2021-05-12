@@ -115,7 +115,7 @@ export const Header = () => {
                     <a href="#about" className="navbar__button button_navbar" style={nbTheme.nbButton} >О компании</a>
                     <a href="#portfolio" className="navbar__button button_navbar" style={nbTheme.nbButton} >Портфолио</a>
                     <a href="#services" className="navbar__button button_navbar" style={nbTheme.nbButton} >Услуги</a>
-                    <a href="#contacts" className="navbar__button button_navbar" style={nbTheme.nbButton} >Контакты</a>
+                    {/* <a href="#contacts" className="navbar__button button_navbar" style={nbTheme.nbButton} >Контакты</a> */}
                 </nav>
             </div>
             <div className="logo" style={styles.logoST} >

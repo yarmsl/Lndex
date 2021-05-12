@@ -40,6 +40,10 @@
     &__social {
         display: flex;
         flex-direction: row;
+        & a {
+            -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+            -webkit-tap-highlight-color: transparent;
+        }
         & a svg {
             fill: $tp;
             transition: all 250ms ease-out;
